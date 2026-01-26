@@ -1,11 +1,11 @@
-#Q1
+# Q1
 ```
 docker run -it --rm --entrypoint=bash python:3.13
 pip -V
 ```
 Answer: pip 25.3
 
-#Q3
+# Q3
 ```
 SELECT count(*)
 FROM green_taxi_data
@@ -13,7 +13,7 @@ WHERE (lpep_pickup_datetime >= '2025-11-01' AND lpep_pickup_datetime < '2025-12-
 AND trip_distance <= 1
 ```
 
-#Q4
+# Q4
 ```
 SELECT *
 FROM green_taxi_data
@@ -22,7 +22,7 @@ ORDER BY trip_distance DESC
 LIMIT 1
 ```
 
-#Q5
+# Q5
 ```
 SELECT z."Zone", SUM(t.total_amount) AS total_amount_sum
 FROM green_taxi_data t
@@ -33,7 +33,7 @@ ORDER BY total_amount_sum DESC
 LIMIT 1
 ```
 
-#Q6
+# Q6
 ```
 SELECT lpep_pickup_datetime, pz."Zone" AS pickup_zone, dz."Zone" AS dropoff_zone,
     t.tip_amount
