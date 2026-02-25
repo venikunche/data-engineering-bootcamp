@@ -1,2 +1,2 @@
-# docker-workshop
+# Data Engineering Bootcamp
 Workshop Codespaces
