@@ -20,14 +20,14 @@ def taxi_pipeline_rest_api_source():
                     # Root path of the Cloud Function; all pagination is via query parameters
                     "path": "",
                     # The API returns 1,000 records per page and stops on an empty page.
-                    # We model this with page-number pagination.
+                    # We model this with page-number pagination starting from page 1.
                     "paginator": {
                         "type": "page_number",
+                        "base_page": 1,
                         "page_param": "page",
-                        "start_page": 1,
                     },
                     # Adjust this selector if the API wraps data differently
-                    "data_selector": "data",
+                    "data_selector": "$",
                 },
             },
         ],
